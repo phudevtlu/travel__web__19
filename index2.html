@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mollyclo</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo_rose.png"/>
+    <link rel="icon" type="image/png" href="./assets/img/logo_rose.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts_icon/themify-icons.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body onload="slider()">
+    <div id="web">
+        <div class="header">
+            <div class="header__slide">
+                <img src="./assets/img/Slide/img1.jpg" id="slideImg">
+            </div>
+
+            <div class="header__overlay">
+                <div class="header__nav">
+                    <div class="header__logo">
+                        <a href="#"><img src="./assets/img/Logo1/Mollyclo.png" alt=""></a>
+                    </div>
+                    <div class="header__logo-2">
+                        <a href="#"><img src="./assets/img/Logo1/Mollyclo (1).png" alt=""></a>
+                    </div>
+
+                    <div class="header__menu">
+                        <a class="header__menu-item js-booking">Booking</a>
+                        <a href="#2" class="header__menu-item">Review</a>
+                        <a href="#3" class="header__menu-item">Travel Map</a>
+                        <a href="#4" class="header__menu-item">Blog</a>
+                        <a href="#5" class="header__menu-item">Contact</a>
+                    </div>
+                </div>
+            
+                <div class="login-form">
+                    <h1>WELCOME TO MOLLYCLO</h1>
+                    <h3>Life is either a daring adventure or NOTHING !</h3>
+                    <h3>Cùng trải nghiệm với MOLLYCLO</h3>
+                </div>
+
+                <input type="checkbox" id="check">
+                <label class="js-check" for="check">
+                    <i class="fas fa-bars" id="open"></i>
+                    <i class="fas fa-caret-right" id="close"></i>
+                </label>
+                <div class="header__user js-header__user">
+                    <header>
+                        <img src="./assets/img/Rose.jpg" alt="Avatar">
+                        <h2>Đăng Kòi K</h2>
+                    </header>
+                    <ul class="header__user-list">
+                        <li>
+                            <a href="./index__info.html" class="header__user-item">
+                                <i class="fas fa-user"></i>
+                                Thông tin cá nhân
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./index.html" class="header__user-item">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal đăng nhập -->
+        <div class="modal js-modal-login">
+            <div class="modal-login js-modal-container ">
+                <div class="modal-login__item">
+                    <header class="modal-login__header">
+                        <h1 class="modal-login__header-main">ĐĂNG NHẬP</h1>
+                        <p class="modal-login__header-dsc">
+                            Tham gia ngay cộng đồng du lịch hàng đầu Việt Nam và tận hưởng những điều tuyệt vời nhất từ Mollyclo
+                        </p>
+                    </header>
+                    <div class="modal-login__container">
+                        <div class="modal-login__social">
+                            <div class="modal-login__social-item">
+                                <i class="modal-login__social-icon ti-facebook"></i>
+                                <a href="https://www.facebook.com/tuphu442" class="modal-login__social-text">Đăng nhập bằng Facebook</a>
+                            </div>
+                            <div class="modal-login__social-item">
+                                <i class="modal-login__social-icon ti-google"></i>
+                                <a href="https://accounts.google.com/signin/v2/identifier?hl=vi&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgg%2B%25C4%2591%25C4%2583ng%2Bnh%25E1%25BA%25ADp%26rlz%3D1C1FKPE_viVN965VN965%26oq%3Dgg%2B%25C4%2591%25C4%2583ng%26aqs%3Dchrome.0.0i512j69i57j0i512l2j0i22i30l6.2877j0j7%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAlAAQ&flowName=GlifWebSignIn&flowEntry=AddSession" class="modal-login__social-text">Đăng nhập bằng Google</a>
+                            </div>
+                        </div>
+                        <div class="modal-login__form">
+                            <span class="modal-login__form-text">                   
+                            Đăng nhập bằng Email
+                            </span>
+                            <input class="modal-login__form-input" type="email" placeholder="Email" required>
+                            <input class="modal-login__form-input" type="password" placeholder="Mật khẩu" required>
+                        </div>
+
+                        <div class="modal-login__help">
+                            <div class="modal-login__help-item">
+                                <input class="modal-login-help-item-check" type="checkbox" id="pass">
+                                <label for="pass">Ghi nhớ đăng nhập</label>
+                            </div>
+
+                            <div class="modal-login__help-item-text">Quên mật khẩu ?</div>
+                        </div>
+
+                        <div class="modal-login__option">
+                            <div class="modal-login__option-item js-sign-in">ĐĂNG NHẬP</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-login__item">
+                    <img src="./assets/img/login2_img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Modal đăng ký -->
+        <div class="moda js-moda-reg ">
+            <div class="moda-login js-moda-container ">
+                <div class="moda-login__item">
+                    <header class="moda-login__header">
+                        <h1 class="moda-login__header-main">ĐĂNG KÝ</h1>
+                        <p class="moda-login__header-dsc">
+                            Tham gia ngay cộng đồng du lịch hàng đầu Việt Nam và tận hưởng những điều tuyệt vời nhất từ Mollyclo
+                        </p>
+                    </header>
+                    <div class="moda-login__container">
+                        <div class="moda-login__form">
+                            <span class="moda-login__form-text">
+                            Đăng ký bằng Email
+                            </span>
+                            <input class="moda-login__form-input" type="email" placeholder="Email" required>
+                            <input class="moda-login__form-input" type="password" placeholder="Mật khẩu" required>
+                            <input class="moda-login__form-input" type="password" placeholder="Nhập lại mật khẩu" required>
+                        </div>
+
+                        <div class="moda-login__help">
+                            <div class="moda-login__help-item">
+                                <input class="moda-login-help-item-check" type="checkbox" id="pass">
+                                <label for="pass"><a href="#">Tôi đồng ý với Điều khoản và dịch vụ</a></label>
+                            </div>
+                        </div>
+
+                        <div class="moda-login__option">
+                            <div class="moda-login__option-item ">ĐĂNG KÝ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moda-login__item">
+                    <img src="./assets/img/login2_img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- BOOKING MODAL -->
+        <div class="modal-bk js-modal-bk ">
+            <div class="modal-bk__container js-modal-bk-container">
+                <div class="modal-bk__nav ">
+                    <div class="modal-bk__nav-list">
+                        <button class="modal-bk__nav-item js-bk-plane">
+                            <i class="modal-bk__nav-item-icon fas fa-plane-departure"></i>
+                            <span class="modal-bk__nav-item-name">Vé máy bay</span>
+                        </button>
+                        <button class="modal-bk__nav-item js-bk-hotel">
+                            <i class="modal-bk__nav-item-icon fas fa-hotel"></i>
+                            <span class="modal-bk__nav-item-name">Khách sạn</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-bk__content">
+                    <div class="modal-bk__content-plane js-plane ">
+                        <div class="modal-bk__place">
+                            <label class="modal-bk__place-label" for="">
+                                <h4 class="modal-bk__place-label-text">Từ</h4>
+                                <input type="text" class="modal-bk__place-input" placeholder="Nhập">
+                            </label>
+                            <label class="modal-bk__place-label" for="">
+                                <h4 class="modal-bk__place-label-text">Đến</h4>
+                                <input type="text" class="modal-bk__place-input" placeholder="Nhập">
+                            </label>
+                        </div>
+
+                        <div class="modal-bk__quantity">
+                            <label class="modal-bk__place-label" for="">
+                                <h4 class="modal-bk__place-label-text">Số hành khách:</h4>
+                                <input type="number" class="modal-bk__place-input" placeholder="Số lượng">
+                            </label>
+                        </div>
+
+                        <div class="modal-bk__option">
+                            <label class="modal-bk__place-label" for="">
+                                <h4 class="modal-bk__place-label-text">Hạng ghế:</h4>
+                                <input class="modal-bk__place-input" placeholder="Số lượng">
+                                <div class="modal-bk__option-list">
+                                    <a href="#" class="modal-bk__option-item">Phổ thông</a>
+                                    <a href="#" class="modal-bk__option-item">Phổ thông đặc biệt</a>
+                                    <a href="#" class="modal-bk__option-item">Thương gia</a>
+                                    <a href="#" class="modal-bk__option-item">Hạng nhất</a>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="modal-bk__dates">
+                            <label class="modal-bk__place-label" for="">
+                                <h4 class="modal-bk__place-label-text">Ngày đi:</h4>
+                                <input type="date" class="modal-bk__place-input" placeholder="Số lượng">
+                            </label>
+                            <label class="modal-bk__place-label" for="">
+                                <h4 class="modal-bk__place-label-text">Ngày về:</h4>
+                                <input type="date" class="modal-bk__place-input" placeholder="Số lượng">
+                            </label>
+                        </div>
+
+                        <div class="modal-bk__search ">
+                            Tìm kiếm
+                        </div>
+
+                    </div>
+                    <div class="modal-bk__content-hotel js-hotel ">
+                        <div class="modal-bk__hotel-place">
+                            <label class="modal-bk__hotel-label" for="">
+                                <h4 class="modal-bk__hotel-text">Thành phố, địa điểm hoặc tên khách sạn:</h4>
+                                <input type="text" class="modal-bk__hotel-input" placeholder="Thành phố, khách sạn, điểm đến">
+                            </label>
+                        </div>
+
+                        <div class="modal-bk__hotel-date">
+                            <label class="modal-bk__hotel-label" for="">
+                                <h4 class="modal-bk__hotel-text">Nhận phòng:</h4>
+                                <input type="date" class="modal-bk__hotel-input" placeholder="">
+                            </label>
+                            <label class="modal-bk__hotel-label" for="">
+                                <h4 class="modal-bk__hotel-text">Số đêm:</h4>
+                                <input type="number" class="modal-bk__hotel-input" placeholder="">
+                            </label>
+                            <label class="modal-bk__hotel-label" for="">
+                                <h4 class="modal-bk__hotel-text">Trả phòng:</h4>
+                                <input type="date" class="modal-bk__hotel-input" placeholder="">
+                            </label>
+                        </div>
+
+                        <div class="modal-bk__hotel-quantity">
+                            <label class="modal-bk__hotel-label" for="">
+                                <h4 class="modal-bk__hotel-text">Số lượng Khách và Phòng</h4>
+                                <input type="text" class="modal-bk__hotel-input" placeholder="Người lớn, Trẻ em, Số lượng phòng">
+                            </label>
+
+                            <div class="modal-bk__hotel-search ">
+                                <i class="ti-search modal-bk__hotel-search-icon"></i>
+                                <h4 class="modal-bk__hotel-search-text">Tìm khách sạn</h4>
+                            </div>
+                        </div>
+
+                        <div class="modal-bk__hotel-notice">
+                            <i class="modal-bk__hotel-notice-icon ti-bell"></i>
+                            <h4 class="modal-bk__hotel-notice-text">Thanh toán khi nhận phòng</h4>
+                        </div>
+                    </div>
+                    <div class="modal-bk__content-img">
+                        <img src="./assets/img/reg2_img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- RECOMMEND NEAR PLACE -->
+        <div class="rmd grid wide ">
+            <div class="row rmd__line">
+                <div class="col c-12">
+                    <h2 class="rmd__name">Khám phá những điểm đến gần bạn</h2>
+                </div>
+            </div>
+            <div class="row rmd__container">
+                <div class="col c-3 rmd__item">
+                    <div class="rmd__hover">
+                        <img src="./assets/img/RecommendVn_img/Hanoi.jpg" alt="" class="rmd__item-img">
+                        <div class="rmd__item-name">
+                            <h3>Hà Nội</h3>
+                            <h4>1 giờ lái xe</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col c-3 rmd__item">
+                    <div class="rmd__hover">
+                        <img src="./assets/img/RecommendVn_img/vinhphuc.jpg" alt="" class="rmd__item-img">
+                        <div class="rmd__item-name">
+                            <h3>Vĩnh Phúc</h3>
+                            <h4>1,5 giờ lái xe</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col c-3 rmd__item">
+                    <div class="rmd__hover">
+                        <img src="./assets/img/RecommendVn_img/haiphong.jpg" alt="" class="rmd__item-img">
+                        <div class="rmd__item-name">
+                            <h3>Hải Phòng</h3>
+                            <h4>1,2 giờ lái xe</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col c-3 rmd__item">
+                    <div class="rmd__hover">
+                        <img src="./assets/img/RecommendVn_img/ninhbinh.jpg" alt="" class="rmd__item-img">
+                        <div class="rmd__item-name">
+                            <h3>Thành phố Ninh Bình</h3>
+                            <h4>2 giờ lái xe</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col c-3 rmd__item">
+                    <div class="rmd__hover">
+                        <img src="./assets/img/RecommendVn_img/haiduong.jpg" alt="" class="rmd__item-img">
+                        <div class="rmd__item-name">
+                            <h3>Thành phố Hải Dương</h3>
+                            <h4>15 phút lái xe</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col c-3 rmd__item">
+                    <div class="rmd__hover">
+                        <img src="./assets/img/RecommendVn_img/thanhtri.jpg" alt="" class="rmd__item-img">
+                        <div class="rmd__item-name">
+                            <h3>Huyện Thanh Trì</h3>
+                            <h4>1,2 giờ lái xe</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col c-3 rmd__item">
+                    <div class="rmd__hover">
+                        <img src="./assets/img/RecommendVn_img/thaibinh.jpg" alt="" class="rmd__item-img">
+                        <div class="rmd__item-name">
+                            <h3>Thái Bình</h3>
+                            <h4>2 giờ lái xe</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col c-3 rmd__item">
+                    <div class="rmd__hover">
+                        <img src="./assets/img/RecommendVn_img/bacninh.jpg" alt="" class="rmd__item-img">
+                        <div class="rmd__item-name">
+                            <h3>Thành phố Bắc Ninh</h3>
+                            <h4>1.2 giờ lái xe</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- REVIEW TRAVEL -->
+        <div id="2" class="grid wide review__heading">
+            <h1>Đi và khám phá thế giới theo cách của bạn</h1>
+            <h2>Cùng Mollyclo trang bị cho bạn những kiến thức bổ ích cho chuyến du lịch tuyệt vời của bạn</h2>
+            <h4>Tham khảo các bài viết dưới đây nhé
+                <i class="fas fa-sort-down"></i>
+            </h4>
+        </div>
+        <div class="review">
+            <div class="preBtn"><i class="fas fa-chevron-left"></i></div>
+            <div class="nextBtn"><i class="fas fa-chevron-right"></i></div>
+            <div class="review-container">
+                <div class="review-list">
+                    <div class="review-img">
+                        <a href="./review1.html">
+                            <img src="./assets/img/review_tour/hanoi_sapa.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="review-img">
+                        <a href="./review2.html">
+                            <img src="./assets/img/review_tour/hoian.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="review-img">
+                        <a href="./review3.html">
+                            <img src="./assets/img/review_tour/nhatrang.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="review-img">
+                        <a href="./review4.html">
+                            <img src="./assets/img/review_tour/ninhbinh.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="review-img">
+                        <a href="./review5.html">
+                            <img src="./assets/img/review_tour/phuquoc.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="review-img">
+                        <a href="./review6.html">
+                            <img src="./assets/img/review_tour/saigon.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="dot-list">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+        <!-- MAP -->
+        <div id="3" class="map">
+            <div class="grid wide">
+                <div class="row map__heading">
+                    <div class="col c-9">
+                        <h1 class="map__title">Bạn đã khám phá được bao nhiêu tỉnh thành tại Việt Nam? Cùng Mollyclo tạo ngay :</h1>
+                    </div>
+                    <div class="col c-3 map__button ">
+                        <div class="map__btn">
+                            MY TRAVEL MAP
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="map__map-img">
+                <div class="map__map-container">
+                    <img src="./assets/img/map/travel_map.png" alt="Map" class="map__img">
+                    <div class="map__search">
+                        <input type="text" class="map__search-input" placeholder="Chọn nơi bạn đã đến ...">
+                        <i class="map__search-icon ti-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BLOG-POST-FORM -->
+        <div class="blog__post">
+            <div class="blog__post-container">
+                <div class="blog__post-heading">
+                    <h1>Tạo bài viết</h1>
+                </div>
+                <div class="blog__post-body">
+                    <div class="blog__post-body-title">
+                        <img src="./assets/img/Rose.jpg" alt="">
+                        <div class="blog__post-body-name">
+                            <h2>Đăng Kòi K</h2>
+                            <div class="blog__post-pub">
+                                <i class="fas fa-globe-americas">
+                                    Công khai
+                                </i>     
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__post-body-input">
+                        <input type="text" placeholder="Đăng Kòi K, Bạn muốn chia sẻ gì với Mollyclo">
+                    </div>
+                    <div class="blog__post-add">
+                        <h3>Thêm vào bài viết của bạn</h3>
+                        <div class="blog__post-add-icon">
+                            <i class="far fa-images"></i>
+                            <i class="far fa-laugh"></i>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                    </div>
+                    <div class="blog__post-active">
+                        <h1>ĐĂNG BÀI</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BLOG -->
+        <div id="4" class="grid wide blog">
+            <div class="row">
+                <div class="col c-4 blog__heading-item">
+                    <h2>Tạo blog cá nhân</h2>
+                    <h3>Tạo blog bằng cách chia sẻ trải nghiệm chuyến đi của bạn</h3>
+                </div>
+                <div class="col c-4 blog__heading-item">
+                    <h2>Chia sẻ hình ảnh</h2>
+                    <h3>Chia sẻ những khoảnh khắc đẹp trong chuyến đi của bạn</h3>
+                </div>
+                <div class="col c-4 blog__heading-item">
+                    <h2>Hỏi đáp thắc mắc</h2>
+                    <h3>Đặt câu hỏi và giúp thành viên khác giải đáp thắc mắc</h3>
+                </div>
+            </div>
+
+            <div class="row blog__container">
+                <div class="col c-3 blog__nav">
+                    <div class="blog__nav-item js-news">
+                        <i class="far fa-newspaper  blog__nav-icon"></i>
+                        <h3>BẢNG TIN</h3>
+                    </div>
+                    <div class="blog__nav-item js-question">
+                        <i class="fas fa-users blog__nav-icon"></i>
+                        <h3>HỎI ĐÁP</h3>
+                    </div>
+                </div>
+
+                <div class="col c-9 blog__news">
+                    <div class="row">
+                        <div class="col c-12">
+                            <div class="blog__news-heading">
+                                <img src="./assets/img/Rose.jpg" alt="Avatar" class="blog__news-avt">
+                                <input type="text" class="blog__news-input blog__post-btn" placeholder="Chia sẻ khoảng khắc tuyệt vời của bạn với mọi người nào...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row blog__news-action">
+                        <div class="col c-4">
+                            <div class="blog__news-act ">
+                                <i class="far fa-images blog__news-act-icon"></i>
+                                <h3>Ảnh/Video</h3>
+                            </div>
+                        </div>
+                        <div class="col c-4">
+                            <div class="blog__news-act ">
+                                <i class="far fa-laugh blog__news-act-icon"></i>
+                                <h3>Cảm xúc/Hành động</h3>
+                            </div>
+                        </div>
+                        <div class="col c-4">
+                            <div class="blog__news-act ">
+                                <i class="fas fa-map-marker-alt blog__news-act-icon"></i>
+                                <h3>Check in</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col c-12 js-modal-news open">
+                            <div class="blog__news-item">
+                                <div class="blog__news-item-head">
+                                    <img src="./assets/img/Rose.jpg" alt="Avatar" class="blog__news-item-avt">
+                                    <h3>Đăng Kòi K</h3>
+                                </div>
+                                <div class="blog__news-item-body">
+                                    <h3>Cơm cháy Ninh Bình – Món ăn làm quà</h3>
+                                    <p>Nếu bạn còn đang băn khoăn ăn gì ở Ninh Bình? Ninh Bình có đặc sản gì? Hay mua đặc sản làm quà nào thì ngon, ai cũng thích? Thì đặc sản cơm cháy là sự lựa chọn số 1 đấy, bởi hương vị và cách chế biến thì chỉ có người dân địa phương mới biết cách làm ngon thôi.</p>
+                                    <div class="row no-gutter ">
+                                        <div class="col c-6">
+                                            <img src="./assets/img/Review/com-chay-ninh-binh-1.jpg" alt="">
+                                        </div>
+                                        <div class="col c-6">
+                                            <img src="./assets/img/Review/gia-com-chay-ninh-binh.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog__news-react">
+                                    <div class="row">
+                                        <div class="col c-12 blog__news-react-item">
+                                            <div class="react">
+                                                <i class="fas fa-heart blog__icon-like"></i>
+                                                <i class="far fa-comment"></i>
+
+                                            </div>
+                                            <div class="save">
+                                                <i class="far fa-bookmark blog__icon-save"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__news-item">
+                                <div class="blog__news-item-head">
+                                    <img src="./assets/img/Avatar_blog/Dat.jpg" alt="Avatar" class="blog__news-item-avt">
+                                    <h3>Đạt Vũ Thư</h3>
+                                </div>
+                                <div class="blog__news-item-body">
+                                    <h3>Huế - Một chiều trước mùa mưa!</h3>
+                                    <p>Huế dạo này không vui cũng chẳng buồn, vắng đi tiếng nói hai miền Bắc Nam tụ họp, Huế vốn trầm lắng nay thêm phần trầm lắng.
+                                        Những ngày đầu đông, bầu trời Huế buồn đến nao lòng, một vài giọt mưa lớn chia thành nhiều giọt mưa nhỏ, cứ thế mà lắc rắc rơi từng hạt, từ sáng đến tối, từ ngày này qua ngày kia.
+                                        Ai ở Huế chắc cũng biết, mùa mưa của Huế diết da và tha thiết, đến mức khắc sâu vào tâm trí con người về sự nổi tiếng của cơn mưa Huế, buồn não nề, buồn thúi cả ruột, đối với những ai xa Huế hoặc đã từng có một thời gian gắng bó với Huế, mưa Huế là một ký ức khó quên.
+                                        Ngày trời Huế đổi mùa, lòng người cũng vì thế mà thay đổi theo, có vẻ thiên nhiên cảnh vật ở đây làm dân đất Cố Đô mang theo một tính cách rất khác, một chút lắng đọng, một chút kiệm lời, một chút mộng mơ.</p>
+                                    <div class="row no-gutter ">
+                                        <div class="col c-12">
+                                            <img src="./assets/img/Review/review_hue/Anh1.jpg" alt="">
+                                        </div>
+                                        <div class="col c-4">
+                                            <img src="./assets/img/Review/review_hue/Anh2.jpg" alt="">
+                                        </div>
+                                        <div class="col c-4">
+                                            <img src="./assets/img/Review/review_hue/Anh3.jpg" alt="">
+                                        </div>
+                                        <div class="col c-4">
+                                            <img src="./assets/img/Review/review_hue/Anh4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog__news-react">
+                                    <div class="row">
+                                        <div class="col c-12 blog__news-react-item">
+                                            <div class="react">
+                                                <i class="fas fa-heart blog__icon-like"></i>
+                                                <i class="far fa-comment"></i>
+
+                                            </div>
+                                            <div class="save">
+                                                <i class="far fa-bookmark blog__icon-save"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__news-item">
+                                <div class="blog__news-item-head">
+                                    <img src="./assets/img/Avatar_blog/Avatar (2).jpg" alt="Avatar" class="blog__news-item-avt">
+                                    <h3>Phú Cô Đơn</h3>
+                                </div>
+                                <div class="blog__news-item-body">
+                                    <h3>Bún chả Hà Nội - Sức hấp dẫn không thể chối từ !</h3>
+                                    <p>Bún chả là món ăn truyền thống cuội nguồn của người dân Hà Nội Thủ Đô, dù đã truyền từ đời này sang đời khác, tuy nhiên cái khẩu vị bao lâu thì vẫn luôn luôn được giữ gìn, nó không thể đơn giản và giản dị là một món ăn cho riêng Hà Nội Thủ Đô mà đã được người dân toàn quốc cũng như khác quốc tế quốc tế biết đến, nằm trong danh sách những món ăn phải thử lúc tới Việt Nam, và được fan hâm mộ National Geographic Đánh Giá là một trong 10 món ăn đường kính trắng phố tuyệt nhất toàn thế giới.</p>
+                                    <div class="row no-gutter ">
+                                        <div class="col c-12">
+                                            <img src="./assets/img/Review/buncha_hanoi.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog__news-react">
+                                    <div class="row">
+                                        <div class="col c-12 blog__news-react-item">
+                                            <div class="react">
+                                                <i class="fas fa-heart blog__icon-like"></i>
+                                                <i class="far fa-comment"></i>
+
+                                            </div>
+                                            <div class="save">
+                                                <i class="far fa-bookmark blog__icon-save"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__news-more-2 js-blog__new-more">
+                                <div class="blog__news-item">
+                                    <div class="blog__news-item-head">
+                                        <img src="./assets/img/Avatar_blog/Hai.jpg" alt="Avatar" class="blog__news-item-avt">
+                                        <h3>Hải Vĩnh Tường</h3>
+                                    </div>
+                                    <div class="blog__news-item-body">
+                                        <h3>Cắm trại giữa vách đá trắng Hà Giang, ngắm trọn đèo Mã Pí Lèng và sông Nho Quế.</h3>
+                                        <p>(Ảnh của Dũng Phạm và Nguyễn Trung Đức)</p>
+                                        <div class="row no-gutter ">
+                                            <div class="col c-12">
+                                                <img src="./assets/img/Review/review_hagiang/Anh1.jpg" alt="">
+                                            </div>
+                                            <div class="col c-6">
+                                                <img src="./assets/img/Review/review_hagiang/Anh3.jpg" alt="">
+                                            </div>
+                                            <div class="col c-6">
+                                                <img src="./assets/img/Review/review_hagiang/Anh4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog__news-react">
+                                        <div class="row">
+                                            <div class="col c-12 blog__news-react-item">
+                                                <div class="react">
+                                                    <i class="fas fa-heart blog__icon-like"></i>
+                                                    <i class="far fa-comment"></i>
+    
+                                                </div>
+                                                <div class="save">
+                                                    <i class="far fa-bookmark blog__icon-save"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog__news-item">
+                                    <div class="blog__news-item-head">
+                                        <img src="./assets/img/Avatar_blog/Ninh.jpg" alt="Avatar" class="blog__news-item-avt">
+                                        <h3>Ninh Nặng Nịnh</h3>
+                                    </div>
+                                    <div class="blog__news-item-body">
+                                        <h3>Phú Quốc của Việt Nam sẽ "Đón khách quốc tế qua hộ chiếu v/x từ 20/11”</h3>
+                                        <p>"Theo kế hoạch, chương trình mở cửa đón khách quốc tế tại đảo Phú Quốc sẽ được triển khai thực hiện trong 6 tháng. Từ ngày 20/11/21, Phú Quốc sẽ tổ chức đón từ 1 đến 3 chuyến bay thuê bao đầu tiên đến Phú Quốc để vận hành thử nghiệm quy trình đón, phục vụ khách để đánh giá, rút kinh nghiệm" - thông tin đăng trên dangcongsan.vn</p>
+                                        <div class="row no-gutter ">
+                                            <div class="col c-12">
+                                                <img src="./assets/img/Review/phuquoc_noti/Anh1.jpg" alt="">
+                                            </div>
+                                            <div class="col c-6">
+                                                <img src="./assets/img/Review/phuquoc_noti/Anh2.jpg" alt="">
+                                            </div>
+                                            <div class="col c-6">
+                                                <img src="./assets/img/Review/phuquoc_noti/Anh3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog__news-react">
+                                        <div class="row">
+                                            <div class="col c-12 blog__news-react-item">
+                                                <div class="react">
+                                                    <i class="fas fa-heart blog__icon-like"></i>
+                                                    <i class="far fa-comment"></i>
+    
+                                                </div>
+                                                <div class="save">
+                                                    <i class="far fa-bookmark blog__icon-save"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__news-more">
+                                <div class="blog__news-more-item js-more-show">
+                                    <h3>Xem thêm bài viết</h3>
+                                    <i class="ti-angle-down"></i>
+                                </div>
+                                <div class="blog__news-more-item js-more-hidden">
+                                    <h3>Ẩn bớt</h3>
+                                    <i class="ti-angle-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col c-12 js-modal-ques">
+                            <div class="blog__ques-heading">
+                                <h3>Hỏi đáp thắc mắc của bạn cùng Cộng đồng Mollyclo</h3>
+                            </div>
+                            <div class="blog__ques-input">
+                                <img src="./assets/img/Rose.jpg" alt="Avatar">
+                                <input type="text" placeholder="Câu hỏi của bạn">
+                            </div>
+
+                            <div class="blog__ques-item">
+                                <div class="blog__ques-item-head">
+                                    <img src="./assets/img/Avatar_blog/ngoctrinh.jpg" alt="Avatar">
+                                    <h3>Ngọc Trinh</h3>
+                                </div>
+                                <h2>Giá phòng ở vinpeal Phú Quốc</h2>
+                                <p>Nếu nghỉ ngơi luôn ở trong Vinpeal Phú Quốc thì giá phòng có cao không mọi người,nếu mà mua dịch vụ từ A-Z ăn chơi, nghỉ ngơi luôn có được không? giá có giảm không mọi người.</p>
+                                <div class="blog__news-react">
+                                    <div class="row">
+                                        <div class="col c-12 blog__news-react-item">
+                                            <div class="react">
+                                                <i class="fas fa-heart blog__icon-like"></i>
+                                                <i class="far fa-comment"></i>
+
+                                            </div>
+                                            <div class="save">
+                                                <i class="far fa-bookmark blog__icon-save"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__ques-item">
+                                <div class="blog__ques-item-head">
+                                    <img src="./assets/img/Avatar_blog/minhtu.jpg" alt="Avatar">
+                                    <h3>Minh Tú</h3>
+                                </div>
+                                <h2>Ở Sài Gòn buồn thì đi đâu</h2>
+                                <p>Ở SG lâu rồi mà chỉ đi vài chỗ,anh chị gợi ý cho em vài điểm có thể đi ở SG hấp dẫn,độc lạ với ạ</p>
+                                <div class="blog__news-react">
+                                    <div class="row">
+                                        <div class="col c-12 blog__news-react-item">
+                                            <div class="react">
+                                                <i class="fas fa-heart blog__icon-like"></i>
+                                                <i class="far fa-comment"></i>
+
+                                            </div>
+                                            <div class="save">
+                                                <i class="far fa-bookmark blog__icon-save"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__ques-item">
+                                <div class="blog__ques-item-head">
+                                    <img src="./assets/img/Avatar_blog/maiamnhac.jpg" alt="Avatar">
+                                    <h3>Mai Âm Nhạc</h3>
+                                </div>
+                                <h2>Khách sạn Imperial Vũng Tàu</h2>
+                                <p>Mọi người ai từng ở khách sạn Imperial cho em xin review với ạ, nghe nói sang trọng, mà giá cũng cao, em tính ở 1 đêm thôi thì ở đây có dịch vụ gì vậy ạ.</p>
+                                <div class="blog__news-react">
+                                    <div class="row">
+                                        <div class="col c-12 blog__news-react-item">
+                                            <div class="react">
+                                                <i class="fas fa-heart blog__icon-like"></i>
+                                                <i class="far fa-comment"></i>
+
+                                            </div>
+                                            <div class="save">
+                                                <i class="far fa-bookmark blog__icon-save"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog__ques-more-2">
+                                <div class="blog__ques-item">
+                                    <div class="blog__ques-item-head">
+                                        <img src="./assets/img/Avatar_blog/hieupc.jpg" alt="Avatar">
+                                        <h3>Hiếu PC</h3>
+                                    </div>
+                                    <h2>Đánh giá khu du lịch Chí Linh</h2>
+                                    <p>Anh chị em nào đi khu du lịch Chí Linh rồi chia sẻ một số thông tin với ạ. Ở đó có cắm trại qua đêm không, giá vé các điểm tham quan, ăn uống nghỉ ngơi nữa ạ.</p>
+                                    <div class="blog__news-react">
+                                        <div class="row">
+                                            <div class="col c-12 blog__news-react-item">
+                                                <div class="react">
+                                                    <i class="fas fa-heart blog__icon-like"></i>
+                                                    <i class="far fa-comment"></i>
+    
+                                                </div>
+                                                <div class="save">
+                                                    <i class="far fa-bookmark blog__icon-save"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog__ques-item">
+                                    <div class="blog__ques-item-head">
+                                        <img src="./assets/img/Avatar_blog/avatar_defaut.jpg" alt="Avatar">
+                                        <h3>Tạ Minh Quang</h3>
+                                    </div>
+                                    <h2>Phượt Bắc Giang</h2>
+                                    <p>Anh chi nào đi xe máy từ Hà Nôi lên Bắc Giang chia sẻ em ít thông tin với ạ, cần lưu ý những gì, và có những điểm du lịch đẹp nào ở Bắc Giang vậy ạ</p>
+                                    <div class="blog__news-react">
+                                        <div class="row">
+                                            <div class="col c-12 blog__news-react-item">
+                                                <div class="react">
+                                                    <i class="fas fa-heart blog__icon-like"></i>
+                                                    <i class="far fa-comment"></i>
+    
+                                                </div>
+                                                <div class="save">
+                                                    <i class="far fa-bookmark blog__icon-save"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog__ques-item">
+                                    <div class="blog__ques-item-head">
+                                        <img src="./assets/img/Avatar_blog/avatar_defaut.jpg" alt="Avatar">
+                                        <h3>Ngô Minh Hiếu</h3>
+                                    </div>
+                                    <h2>Giá phòng ở Tam Đảo</h2>
+                                    <p>Giá phong trung bình ở Tam Đảo khoảng bao nhiêu mọi người, phòng chỉ để ở thôi, thoáng mát view biển là được</p>
+                                    <div class="blog__news-react">
+                                        <div class="row">
+                                            <div class="col c-12 blog__news-react-item">
+                                                <div class="react">
+                                                    <i class="fas fa-heart blog__icon-like"></i>
+                                                    <i class="far fa-comment"></i>
+    
+                                                </div>
+                                                <div class="save">
+                                                    <i class="far fa-bookmark blog__icon-save"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>         
+                            <div class="blog__ques-more">
+                                <div class="blog__ques-more-item js-ques-show">
+                                    <h3>Xem thêm câu hỏi</h3>
+                                    <i class="ti-angle-down"></i>
+                                </div>
+                                <div class="blog__ques-more-item js-ques-hidden">
+                                    <h3>Ẩn bớt</h3>
+                                    <i class="ti-angle-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>      
+        
+        <div id="5" class="footer">
+            <div class="grid wide">
+                <div class="row footer_heading">
+                    <div class="col c-2 footer_heading-icon">
+                        <i class="ti-facebook"></i>
+                        <i class="ti-instagram"></i>
+                        <i class="ti-twitter"></i>
+                        <i class="ti-skype"></i>
+                    </div>
+                    <div class="col c-6">
+                        <h4>Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn</h4>
+                        <p>Khi nhấp vào Đăng ký, bạn đồng ý với các <a href="#">Điều khoản và Điều kiện</a> và<a href="#">Chính sách bảo mật</a> của chúng tôi</p>
+                    </div>
+                    <div class="col c-4">
+                        <div class="footer_heading-input">
+                            <input type="email" placeholder="Nhập Email">
+                            <div class="footer_heading-btn">
+                                Đăng ký
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer_container">
+                    <div class="col c-3">
+                        <h2>© 2021 Mollyclo. All Rights Reserved.</h2>
+                    </div>
+                    <div class="col c-2">
+                        <h3>VỀ MOLLYCLO</h3>
+                        <ul>
+                            <li>Về chúng tôi</li>
+                            <li>Mollyclo Blog</li>
+                            <li>Hợp tác cùng chúng tôi</li>
+                            <li>Cơ hội nghề nghiệp</li>
+                        </ul>
+                    </div>
+                    <div class="col c-2">
+                        <h3>ĐỐI TÁC</h3>
+                        <ul>
+                            <li>Đối tác đăng nhập</li>
+                            <li>Đối tác liên kết</li>
+                            <li>Chương trình cho người nổi tiếng</li>
+                            <li>Chương trình cho Đại lý</li>
+                        </ul>
+                    </div>
+                    <div class="col c-3">
+                        <h3>ĐIỀU KHOẢN SỬ DỤNG</h3>
+                        <ul>
+                            <li>Điều khoản sử dụng</li>
+                            <li>Quyền riêng tư</li>
+                            <li>Chính sách Cookie</li>
+                            <li>Thưởng phát hiện lỗi phần mềm</li>
+                            <li>Chính sách và quy định</li>
+                        </ul>
+                    </div>
+                    <div class="col c-2">
+                        <h3>KÊNH THANH TOÁN</h3>
+                        <div class="footer-pay">
+                            <img src="./assets/img/footer_pay/paypal.png" alt="">
+                            <img src="./assets/img/footer_pay/visa.png" alt="">
+                            <img src="./assets/img/footer_pay/master_card.png" alt="">                              
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+       
+    </div>
+    
+
+
+    <!-- JS -->
+    <script>
+
+        // FORM ĐĂNG NHẬP
+        const loginBtn = document.querySelector('.js-login')
+        const modalLogin = document.querySelector('.js-modal-login')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        loginBtn.onclick = function () {
+            modalLogin.classList.add('open')
+        }
+
+        modalLogin.onclick = function () {
+            modalLogin.classList.remove('open')
+        }
+
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
+    <script>
+        // FORM ĐĂNG KÍ
+        const regBtn = document.querySelector('.js-reg')
+        const modaReg = document.querySelector('.js-moda-reg')
+        const modaContainer = document.querySelector('.js-moda-container')
+
+        regBtn.onclick = function () {
+            modaReg.classList.add('open')
+        }
+
+        modaReg.onclick = function () {
+            modaReg.classList.remove('open')
+        }
+
+        modaContainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
+    <script>
+        //  FORM SLIDE HEADER
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array (
+            "./assets/img/Slide/img1.jpg",
+            "./assets/img/Slide/img2.jpg",
+            "./assets/img/Slide/img3.jpg",
+            "./assets/img/Slide/img4.jpg"
+        )
+        var len = images.length;
+        var i = 0;
+        function slider() {
+            if(i > len-1){
+                i=0
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()',1500);
+        }
+    </script>
+    <script>
+        // BOOKING FORM
+        const bkBtn = document.querySelector('.js-booking')
+        const modalBk = document.querySelector('.js-modal-bk')
+        const modalBkcontainer = document.querySelector('.js-modal-bk-container')
+        bkBtn.onclick = function() {
+            modalBk.classList.add('open')
+        }
+        modalBk.onclick = function() {
+            modalBk.classList.remove('open')
+        }
+        modalBkcontainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+        // BOOKING PLANE TICKETS
+        const planeBtn = document.querySelector('.js-bk-plane')
+        const modalPlane = document.querySelector('.js-plane')
+        planeBtn.onclick = function() {
+            modalHotel.classList.remove('open')
+            modalPlane.classList.add('open')
+        }
+        // BOOKING HOTEL
+        const hotelBtn = document.querySelector('.js-bk-hotel')
+        const modalHotel = document.querySelector('.js-hotel')
+        hotelBtn.onclick = function() {
+            modalPlane.classList.remove('open')
+            modalHotel.classList.add('open')
+        }
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var headerMenu = document.querySelector('.header__nav');
+            headerMenu.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+    </script>  
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        const heartBtn = document.querySelectorAll('.blog__icon-like')
+        Array.from(heartBtn).forEach(function(item,index)  {
+            item.onclick = function () {
+                if(item.classList.contains('press') === true) {
+                    item.classList.remove('press')
+                }else {
+                    item.classList.add('press')
+                }
+            }
+        })
+    </script>
+    <script>
+        const newsBtn = document.querySelector('.js-news')
+        const quesBtn = document.querySelector('.js-question')
+        const modalNews = document.querySelector('.js-modal-news')
+        const modalQues = document.querySelector('.js-modal-ques')
+        const showNewsmore = document.querySelector('.blog__news-more-2')
+        const hiddenNewsBtn = document.querySelector('.js-more-hidden')
+        const showNewsBtn = document.querySelector('.js-more-show')
+        const showQuesmore = document.querySelector('.blog__ques-more-2')
+        const showQuesBtn = document.querySelector('.js-ques-show')
+        const hiddenQuesBtn = document.querySelector('.js-ques-hidden')
+        newsBtn.onclick = function() {
+            modalQues.classList.remove('open')
+            modalNews.classList.add('open')
+        }
+        quesBtn.onclick = function() {
+            modalNews.classList.remove('open')
+            modalQues.classList.add('open')
+        }
+        hiddenNewsBtn.onclick = function() {
+            modalNews.classList.remove('open')
+        }
+        showNewsBtn.onclick = function() {
+            showNewsmore.classList.add('open')
+        }
+        hiddenQuesBtn.onclick = function() {
+            modalQues.classList.remove('open')
+        }
+        showQuesBtn.onclick = function() {
+            showQuesmore.classList.add('open')
+        }
+    </script>
+    
+    <script>
+        const signIn = document.querySelector('.js-sign-in')
+        const user = document.querySelector('.js-header__user')
+        const arrowBtn = document.querySelector('.js-check')
+        signIn.onclick = function() {
+            user.classList.add('open')
+            arrowBtn.classList.add('open')
+            modaReg.classList.remove('open')
+        }
+    </script>
+    <script>
+        const reviewImg = document.querySelectorAll('.review-img');
+        const reviewList = document.querySelector('.review-list');
+        const dot = document.querySelectorAll('.dot')
+        const nextBtn = document.querySelector('.nextBtn')
+        const prevBtn = document.querySelector('.preBtn')
+
+        let imgWidth = reviewImg[0].clientWidth;
+        let imgLength = reviewImg.length;
+        let imgIndex = 0;
+
+        function setTime () {
+            imgIndex++;
+            if (imgIndex >= imgLength) {
+                imgIndex = 0;
+                showImg (imgIndex)
+                return 
+            }
+            showImg (imgIndex)
+        }
+
+        setInterval (setTime, 5000)
+
+        function imagePosition (imgIndex) {
+            reviewImg.forEach(function(image,index){
+                image.style.left = index * 100 + "%"
+            })
+            dot[0].classList.add('active')
+        }
+        imagePosition()
+        for ( let i=0; i<imgLength; i++) {
+            dot[i].addEventListener('click', function() {
+                showImg (i)
+            })
+        }
+
+        nextBtn.addEventListener('click', function() {
+            imgIndex = imgIndex +1;
+            if (imgIndex >= imgLength) {
+                imgIndex = 0;
+                showImg (imgIndex)
+                return 
+            }
+            showImg (imgIndex)
+        })
+        prevBtn.addEventListener('click', function() {
+            imgIndex = imgIndex -1;
+            if (imgIndex <= 0) {
+                imgIndex = imgLength -1;
+                showImg (imgIndex)
+                return 
+            }
+            showImg (imgIndex)
+        })
+
+        function showImg (imgIndex) {
+            reviewList.style.transform = "translate(-"+imgWidth*imgIndex+"px)";
+            reviewList.style.transition = "transform 0.5s ease-in-out";
+        
+            SetActive (imgIndex)
+        }
+        function SetActive (imgIndex) {
+            let currenDot = document.querySelector('.active')
+            currenDot.classList.remove('active')
+            dot[imgIndex].classList.add('active')
+        }
+    </script>
+    <script>
+        const modalPost = document.querySelector('.blog__post')
+        const modalPostcontainer = document.querySelector('.blog__post-container')
+        const postBtn = document.querySelector('.blog__post-btn')
+        const postModal = document.querySelector('.blog__post-active')
+
+        postBtn.onclick = function() {
+            modalPost.classList.add('open')
+        }
+        modalPost.onclick = function() {
+            modalPost.classList.remove('open')
+        }
+        postModal.onclick = function() {
+            modalPost.classList.remove('open')
+        }
+        modalPostcontainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mollyclo</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo_rose.png"/>
+    <link rel="icon" type="image/png" href="./assets/img/logo_rose.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts_icon/themify-icons.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body onload="slider()">
+    <div id="web">
+        <div class="header">
+            <div class="header__slide">
+                <img src="./assets/img/Slide/img1.jpg" id="slideImg">
+            </div>
+
+            <div class="header__overlay">
+                <div class="header__nav">
+                    <div class="header__logo">
+                        <a href="#"><img src="./assets/img/Logo1/Mollyclo.png" alt=""></a>
+                    </div>
+                    <div class="header__logo-2">
+                        <a href="#"><img src="./assets/img/Logo1/Mollyclo (1).png" alt=""></a>
+                    </div>
+
+                    <div class="header__menu">
+                        <a class="header__menu-item js-booking">Booking</a>
+                        <a href="#" class="header__menu-item">Review</a>
+                        <a href="#3" class="header__menu-item">Travel Map</a>
+                        <a href="#4" class="header__menu-item">Blog</a>
+                        <a href="#" class="header__menu-item">Contact</a>
+                    </div>
+                </div>
+            
+                <div class="login-form">
+                    <h1>WELCOME TO MOLLYCLO</h1>
+                    <h3>Life is either a daring adventure or NOTHING !</h3>
+                    <div class="login-form__btn">
+                        <button type="button" class="btn-1 js-login">ĐĂNG NHẬP</button>
+                        <button type="button" class="btn-2 js-reg">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal đăng nhập -->
+        <div class="modal js-modal-login">
+            <div class="modal-login js-modal-container ">
+                <div class="modal-login__item">
+                    <header class="modal-login__header">
+                        <h1 class="modal-login__header-main">ĐĂNG NHẬP</h1>
+                        <p class="modal-login__header-dsc">
+                            Tham gia ngay cộng đồng du lịch hàng đầu Việt Nam và tận hưởng những điều tuyệt vời nhất từ Mollyclo
+                        </p>
+                    </header>
+                    <div class="modal-login__container">
+                        <div class="modal-login__social">
+                            <div class="modal-login__social-item">
+                                <i class="modal-login__social-icon ti-facebook"></i>
+                                <a href="https://www.facebook.com/tuphu442" class="modal-login__social-text">Đăng nhập bằng Facebook</a>
+                            </div>
+                            <div class="modal-login__social-item">
+                                <i class="modal-login__social-icon ti-google"></i>
+                                <a href="https://accounts.google.com/signin/v2/identifier?hl=vi&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgg%2B%25C4%2591%25C4%2583ng%2Bnh%25E1%25BA%25ADp%26rlz%3D1C1FKPE_viVN965VN965%26oq%3Dgg%2B%25C4%2591%25C4%2583ng%26aqs%3Dchrome.0.0i512j69i57j0i512l2j0i22i30l6.2877j0j7%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAlAAQ&flowName=GlifWebSignIn&flowEntry=AddSession" class="modal-login__social-text">Đăng nhập bằng Google</a>
+                            </div>
+                        </div>
+                        <div class="modal-login__form">
+                            <span class="modal-login__form-text">                   
+                            Đăng nhập bằng Email
+                            </span>
+                            <input class="modal-login__form-input" type="email" placeholder="Email" required>
+                            <input class="modal-login__form-input" type="password" placeholder="Mật khẩu" required>
+                        </div>
+
+                        <div class="modal-login__help">
+                            <div class="modal-login__help-item">
+                                <input class="modal-login-help-item-check" type="checkbox" id="pass">
+                                <label for="pass">Ghi nhớ đăng nhập</label>
+                            </div>
+
+                            <div class="modal-login__help-item-text">Quên mật khẩu ?</div>
+                        </div>
+
+                        <div class="modal-login__option">
+                            <div class="modal-login__option-item js-sign-in"><a href="./index2.html">ĐĂNG NHẬP</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-login__item">
+                    <img src="./assets/img/login2_img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Modal đăng ký -->
+        <div class="moda js-moda-reg ">
+            <div class="moda-login js-moda-container ">
+                <div class="moda-login__item">
+                    <header class="moda-login__header">
+                        <h1 class="moda-login__header-main">ĐĂNG KÝ</h1>
+                        <p class="moda-login__header-dsc">
+                            Tham gia ngay cộng đồng du lịch hàng đầu Việt Nam và tận hưởng những điều tuyệt vời nhất từ Mollyclo
+                        </p>
+                    </header>
+                    <div class="moda-login__container">
+                        <div class="moda-login__form">
+                            <span class="moda-login__form-text">
+                            Đăng ký bằng Email
+                            </span>
+                            <input class="moda-login__form-input" type="email" placeholder="Email" required>
+                            <input class="moda-login__form-input" type="password" placeholder="Mật khẩu" required>
+                            <input class="moda-login__form-input" type="password" placeholder="Nhập lại mật khẩu" required>
+                        </div>
+
+                        <div class="moda-login__help">
+                            <div class="moda-login__help-item">
+                                <input class="moda-login-help-item-check" type="checkbox" id="pass">
+                                <label for="pass"><a href="#">Tôi đồng ý với Điều khoản và dịch vụ</a></label>
+                            </div>
+                        </div>
+
+                        <div class="moda-login__option">
+                            <div class="moda-login__option-item js-new-acc">ĐĂNG KÝ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moda-login__item">
+                    <img src="./assets/img/login2_img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    <script>
+        // FORM ĐĂNG NHẬP
+        const loginBtn = document.querySelector('.js-login')
+        const modalLogin = document.querySelector('.js-modal-login')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        loginBtn.onclick = function () {
+            modalLogin.classList.add('open')
+        }
+
+        modalLogin.onclick = function () {
+            modalLogin.classList.remove('open')
+        }
+
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
+    <script>
+        // FORM ĐĂNG KÍ
+        const regBtn = document.querySelector('.js-reg')
+        const modaReg = document.querySelector('.js-moda-reg')
+        const modaContainer = document.querySelector('.js-moda-container')
+        const newAcc = document.querySelector('.js-new-acc')
+
+        regBtn.onclick = function () {
+            modaReg.classList.add('open')
+        }
+
+        modaReg.onclick = function () {
+            modaReg.classList.remove('open')
+        }
+
+        newAcc.onclick = function () {
+            modaReg.classList.remove('open')
+            modalLogin.classList.add('open')
+        }
+
+        modaContainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
+    <script>
+        //  FORM SLIDE HEADER
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array (
+            "./assets/img/Slide/img1.jpg",
+            "./assets/img/Slide/img2.jpg",
+            "./assets/img/Slide/img3.jpg",
+            "./assets/img/Slide/img4.jpg"
+        )
+        var len = images.length;
+        var i = 0;
+        function slider() {
+            if(i > len-1){
+                i=0
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()',1500);
+        }
+    </script>
+    <script>
+        // BOOKING FORM
+        const bkBtn = document.querySelector('.js-booking')
+        const modalBk = document.querySelector('.js-modal-bk')
+        const modalBkcontainer = document.querySelector('.js-modal-bk-container')
+        bkBtn.onclick = function() {
+            modalBk.classList.add('open')
+        }
+        modalBk.onclick = function() {
+            modalBk.classList.remove('open')
+        }
+        modalBkcontainer.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+        // BOOKING PLANE TICKETS
+        const planeBtn = document.querySelector('.js-bk-plane')
+        const modalPlane = document.querySelector('.js-plane')
+        planeBtn.onclick = function() {
+            modalHotel.classList.remove('open')
+            modalPlane.classList.add('open')
+        }
+        // BOOKING HOTEL
+        const hotelBtn = document.querySelector('.js-bk-hotel')
+        const modalHotel = document.querySelector('.js-hotel')
+        hotelBtn.onclick = function() {
+            modalPlane.classList.remove('open')
+            modalHotel.classList.add('open')
+        }
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var headerMenu = document.querySelector('.header__nav');
+            headerMenu.classList.toggle("sticky", window.scrollY > 5    );
+        })
+
+    </script>  
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+          $(function() {
+    $( "i" ).click(function() {
+      $( "i" ).toggleClass( "press", 1000 );
+    });
+  });
+    </script>
+    <script>
+        const newsBtn = document.querySelector('.js-news')
+        const quesBtn = document.querySelector('.js-question')
+        const modalNews = document.querySelector('.js-modal-news')
+        const modalQues = document.querySelector('.js-modal-ques')
+        newsBtn.onclick = function() {
+            modalQues.classList.remove('open')
+            modalNews.classList.add('open')
+        }
+        quesBtn.onclick = function() {
+            modalNews.classList.remove('open')
+            modalQues.classList.add('open')
+        }
+    </script>
+    <script>
+        const signIn = document.querySelector('.js-sign-in')
+        const user = document.querySelector('.js-header__user')
+        const arrowBtn = document.querySelector('.js-check')
+        signIn.onclick = function() {
+            user.classList.add('open')
+            arrowBtn.classList.add('open')
+            modaReg.classList.remove('open')
+        }
+    </script>
+</body>
+</html>
